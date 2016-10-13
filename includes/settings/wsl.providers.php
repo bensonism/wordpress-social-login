@@ -265,7 +265,16 @@ $WORDPRESS_SOCIAL_LOGIN_PROVIDERS_CONFIG = ARRAY(
 
 		"cat"               => "pleasedie",
 	),
-	ARRAY( 
+    ARRAY(
+        "provider_id"       => "Basecamp",
+        "provider_name"     => "Basecamp",
+        "require_client_id" => true,
+        "callback"          => true,
+        "new_app_link"      => "https://integrate.37signals.com",
+
+        "cat"               => "work",
+    ),
+	ARRAY(
 		"provider_id"       => "PixelPin",
 		"provider_name"     => "PixelPin",
 		"require_client_id" => true,
