@@ -62,7 +62,7 @@ class OAuth2Client
 			foreach( $extras as $k=>$v )
 				$params[$k] = $v;
 
-		return $this->authorize_url . "?" . http_build_query($params, '', '&');
+		return (strpos($this->authorize_url, '?')) ? $this->authorize_url . "&" . http_build_query($params, '', '&') : $this->authorize_url . "?" . http_build_query($params, '', '&');
 	}
 
 	public function authenticate( $code )
@@ -106,6 +106,8 @@ class OAuth2Client
 
 		$parameters[$this->sign_token_name] = $this->access_token;
 		$response = null;
+
+        die();
 
 		switch( $method ){
 			case 'GET'  : $response = $this->request( $url, $parameters, "GET"  ); break; 
@@ -164,6 +166,10 @@ class OAuth2Client
 
 	function request( $url, $params=false, $type="GET" )
 	{
+	    echo $url;
+        print_r($params);
+        die();
+
 		if( $type == "GET" ){
 			$url = $url . ( strpos( $url, '?' ) ? '&' : '?' ) . http_build_query($params, '', '&');
 		}

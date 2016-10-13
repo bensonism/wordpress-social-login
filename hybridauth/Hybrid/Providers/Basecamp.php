@@ -9,7 +9,7 @@ class Hybrid_Providers_Basecamp extends Hybrid_Provider_Model_OAuth2
 {
     // default permissions
     // public $scope = "basic";
-    protected $user;
+    public $user;
     /**
      * IDp wrappers initializer
      */
@@ -19,7 +19,7 @@ class Hybrid_Providers_Basecamp extends Hybrid_Provider_Model_OAuth2
 
         // Provider api end-points
         $this->api->api_base_url  = $this->user->account->href;
-        $this->api->authorize_url = "https://launchpad.37signals.com/authorization/new";
+        $this->api->authorize_url = "https://launchpad.37signals.com/authorization/new?type=web_server";
         $this->api->token_url     = "https://launchpad.37signals.com/authorization/token";
     }
 

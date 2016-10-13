@@ -3,57 +3,12 @@
 Plugin Name: WordPress Social Login
 Plugin URI: http://miled.github.io/wordpress-social-login/
 Description: Allow your visitors to comment and login with social networks such as Twitter, Facebook, Google, Yahoo and more.
-Version: 2.3.0
+Version: 200.3.0
 Author: Miled
 Author URI: https://github.com/miled
 License: MIT License
 Text Domain: wordpress-social-login
 Domain Path: /languages
-*/
-
-/*
-*
-*  Hi and thanks for taking the time to check out WSL code.
-*
-*  Please, don't hesitate to:
-*
-*   - Report bugs and issues.
-*   - Contribute: code, reviews, ideas and design.
-*   - Point out stupidity, smells and inconsistencies in the code.
-*   - Criticize.
-*
-*  If you want to contribute, please consider these general "guide lines":
-*
-*   - Small patches will be always welcome. Large changes should be discussed ahead of time.
-*   - That said, don't hesitate to delete code that doesn't make sense or looks redundant.
-*   - Feel free to create new functions and files when needed.
-*   - Avoid over-commenting, unless you find it necessary.
-*   - Avoid using 'switch' and 'for'. I hate those.
-*
-*  Coding Style :
-*
-*   - Readable code.
-*   - Clear indentations (tabs: 8-char indents).
-*   - Same name convention of WordPress: those long long and self-explanatory functions and variables.
-*
-*  To keep the code accessible to everyone and easy to maintain, WordPress Social Login is programmed in
-*  procedural PHP and will be kept that way.
-*
-*  If you have fixed, improved or translated something in WSL, Please consider contributing back to the project
-*  by submitting a Pull Request at https://github.com/miled/wordpress-social-login
-*
-*  Grep's user, read below. Keywords stuffing:<add_action|do_action|add_filter|apply_filters>
-*
-*  If you are here just looking for the hooks, then refer to the online Developer API. If it wasn't possible to
-*  achieve some required functionality in a proper way through the already available and documented WSL hooks,
-*  please ask for support before resorting to hacks. WSL internals are not to be used.
-*  http://miled.github.io/wordpress-social-login/documentation.html
-*
-*  If you want to translate this plugin into your language (or to improve the current translations), you can
-*  join in the ongoing effort at https://www.transifex.com/projects/p/wordpress-social-login/
-*
-*  Peace.
-*
 */
 
 // Exit if accessed directly
@@ -68,7 +23,7 @@ global $WORDPRESS_SOCIAL_LOGIN_PROVIDERS_CONFIG;
 global $WORDPRESS_SOCIAL_LOGIN_COMPONENTS;
 global $WORDPRESS_SOCIAL_LOGIN_ADMIN_TABS;
 
-$WORDPRESS_SOCIAL_LOGIN_VERSION = "2.3.0";
+$WORDPRESS_SOCIAL_LOGIN_VERSION = "200.3.0";
 
 $_SESSION["wsl::plugin"] = "WordPress Social Login " . $WORDPRESS_SOCIAL_LOGIN_VERSION;
 
